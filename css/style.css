@@ -78,32 +78,29 @@ body {
 }
 
 /*=========================CONTACTOS BACKGROUND================================*/
-
-#bg-contactos{
-    position:relative;
+#bg-contactos {
+    position: relative;
     top: -130px;
 } 
 
  #seccion-contacto{
-    background-color: #1b2a4e;
+    background-color:#198754;
     min-height:500px;
     position:relative;
 }
 
 /*=========================CONTACTOS FORMULARIO================================*/
 
-#contenedor-formulario{
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    background: #fbfafa;
-    border-radius:5px;
-    
+#contenedor-formulario {
+    position: relative;
+    top: -110px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 #titulo-formulario {
-    color: #3f3f3f;
+    color:#198754;
 }
 
 
@@ -112,17 +109,18 @@ body {
 /*=========================FOOTER================================*/
 
 footer {
-    background: #1b2a4e;
-    min-height: 100px;;
+    background:#198754;
+    min-height: 100px;
 }
-footer p{
-    color:#f3f3f3;
-    text-align:center;
+footer p {
+    color: #f3f3f3;
+    text-align: center;
 }
-#iconos  i {
+
+#iconos i {
     font-size: 26px;
     padding: 0 8px;
-    color:#f3f3f3;
+    color: #f3f3f3;
 }
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
@@ -194,3 +192,143 @@ footer p{
     }
 }
 
+/**ia*/
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-primary:hover {
+    background-color:#198754;
+    border-color:#198754;
+}
+
+.section-title {
+    border-bottom: 2px solid #198754;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.product-section {
+    padding: 40px 0;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+
+/*chatbox*/
+
+/* Estilos para el chat */
+.chat-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #198754;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 24px;
+  }
+  
+  .chat-button:hover {
+    background-color: #157347;
+  }
+  
+  .chat-box {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+    border: 1px solid #ddd;
+  }
+  
+  .chat-header {
+    background-color: #198754;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .chat-input button {
+    background-color: #198754;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #157347;
+  }
