@@ -126,7 +126,7 @@ footer p {
 }
 
 .banner-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/image/Banner-Principal.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/Banner-Principal.jpg');
     background-size: cover;
     background-position: center;
     color: white;

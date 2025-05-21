@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
 
         // Obtener datos del formulario
-        const email = loginForm.querySelector('input[type="email"]').value;
-        const password = loginForm.querySelector('input[type="password"]').value;
+        const Email = loginForm.querySelector('input[type="email"]').value;
+        const Contraseña= loginForm.querySelector('input[type="password"]').value;
 
         try {
             const response = await fetch(`${API_URL}/login`, {
@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    Email: email,
-                    Contraseña: password     
+                    Email,
+                    Contraseña
+
                 })
             });
 

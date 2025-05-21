@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const registerForm = document.getElementById('register-form');
-    const API_URL = 'http://localhost:3306/api'; // Cambiado a puerto 3000
+    const API_URL = 'http://localhost:3306/api'; // Cambia el puerto aquí
 
     registerForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // Obtener datos del formulario con los placeholders correctos
         const Nombre = registerForm.querySelector('input[name="Nombre"]').value;
         const Apellido = registerForm.querySelector('input[name="Apellido"]').value;
         const Email = registerForm.querySelector('input[type="email"]').value;
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const Contraseña = registerForm.querySelector('input[type="password"]').value;
 
         try {
-            const response = await fetch(`${API_URL}/registro`, {
+            const response = await fetch(`${API_URL}/registrar`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (response.ok) {
                 alert(data.message || 'Usuario registrado con éxito');
                 registerForm.reset();
-                
+                window.location.href = 'Login.html';
             } else {
                 alert(data.message || 'Error al registrar el usuario');
                 registerForm.reset();
